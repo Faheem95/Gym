@@ -20,11 +20,14 @@ and open the template in the editor.
             <nav id="navigation"> 
                 <ul id="nav" class="nav navbar navbar-dark bg-dark">
                     <li class="nav-item"><a href="index1.php">Home</a></li>
-                    <li class="nav-item"><a href="create membership.php">Create Membership</a></li>
-                    <li class="nav-item"><a href="display class.php">Available Classes</a></li>
+                    <li class="nav-item"><a href="create account.php">Create Gym Account</a></li>
+                    <li class="nav-item"><a href="display class.php">Class Sign-Up</a></li>
                     <li class="nav-item"><a href="update class list.php">Manage Classes</a></li>
                     <li class="nav-item"><a href="create staff account.php">Manage Staff Accounts</a></li>
-                    <li class="nav-item"><a href="admin membership.php">Manage Memberships</a></li>
+                    <li class="nav-item"><a href="admin management.php">Manage Gym Accounts</a></li>
+                    <li class="nav-item"><a href="create membership.php">Manage Memberships</a></li>
+                    <li class="nav-item"><a href="equipment.php">Equipment</a></li>
+                    <li class="nav-item"><a href="repair log.php">Repair Log</a></li>
                 </ul>
             </nav>
             
@@ -37,7 +40,7 @@ and open the template in the editor.
             </div>
             
             <footer>
-                <p>All Rights Reserved</p>
+                <p></p>
             </footer>
         </div>
 

@@ -1,3 +1,4 @@
+
 <?php
 error_reporting( E_ALL ^ E_DEPRECATED );
  $username = "root";
@@ -19,14 +20,45 @@ include 'Template.php';
 
 
 <html>
-<h2>Total <br>Members</h2><br>
+<br></br>
+<head>
+<style>
+body {
+    background-image: url("og.png");
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+</style>
+</head>
 <body>
+
     <p>
 <?php
     //execute the SQL query and return records    
 $result = mysql_query("SELECT COUNT(*) FROM members");
 $count = mysql_fetch_array($result);
-echo "Members currently signed up:" . $count[0] . "<br>";
+echo "Members currently signed up :" . $count[0] . "<br>";
+    
+    ?>
+    </p>
+
+    <p>
+<?php
+    //execute the SQL query and return records    
+$result = mysql_query("SELECT COUNT(*) FROM membership");
+$count = mysql_fetch_array($result);
+echo "Active Memberships: " . $count[0] . "<br>";
+    
+    ?>
+    </p>
+
+    <p>
+<?php
+    //execute the SQL query and return records    
+$result = mysql_query("SELECT COUNT(*) FROM class");
+$count = mysql_fetch_array($result);
+echo "Classes Available :" . $count[0] . "<br>";
     
     ?>
     </p>

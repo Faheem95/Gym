@@ -54,7 +54,7 @@ $Time = $rows['Time'];
 
 }
 }else{
-echo("no data are available");
+echo("Class Not Available");
 }
 } else{
 echo("result error");
@@ -70,10 +70,10 @@ $insert_result=mysqli_query($conn, $insert_query);
 if($insert_result)
 {
 if(mysqli_affected_rows($conn)>0){
-echo("data inserted successfully");
+echo("Class Created");
 
 }else{
-echo("data are not inserted");
+echo("Class Not Created");
 }
 }
 }catch(Exception $ex){
@@ -89,9 +89,9 @@ $delete_result = mysqli_query($conn, $delete_query);
 if($delete_result){
 if(mysqli_affected_rows($conn)>0)
 {
-echo("data deleted");
+echo("Class Deleted");
 }else{
-echo("data not deleted");
+echo("Class Not Deleted");
 }
 }
 }catch(Exception $ex){
@@ -106,9 +106,9 @@ try{
 $update_result=mysqli_query($conn, $update_query);
 if($update_result){
 if(mysqli_affected_rows($conn)>0){
-echo("data updated");
+echo("Class Updated");
 }else{
-echo("data not updated");
+echo("Class Not Updated");
 }
 }
 }catch(Exception $ex){

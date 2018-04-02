@@ -14,6 +14,7 @@ $Phone="";
 $email="";
 $MemberID="";
 include 'Template.php';
+
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 //connect to mysql database
@@ -57,7 +58,7 @@ $email = $rows['email'];
 
 }
 }else{
-echo("no data are available");
+echo("No Account Available");
 }
 } else{
 echo("result error");
@@ -73,10 +74,10 @@ $insert_result=mysqli_query($conn, $insert_query);
 if($insert_result)
 {
 if(mysqli_affected_rows($conn)>0){
-echo("data inserted successfully");
+echo("Account Created Successfully");
 
 }else{
-echo("data are not inserted");
+echo("Account Not Created");
 }
 }
 }catch(Exception $ex){
@@ -92,9 +93,9 @@ $delete_result = mysqli_query($conn, $delete_query);
 if($delete_result){
 if(mysqli_affected_rows($conn)>0)
 {
-echo("data deleted");
+echo("Account Deleted");
 }else{
-echo("data not deleted");
+echo("Account Not Deleted");
 }
 }
 }catch(Exception $ex){
@@ -109,9 +110,9 @@ try{
 $update_result=mysqli_query($conn, $update_query);
 if($update_result){
 if(mysqli_affected_rows($conn)>0){
-echo("data updated");
+echo("Account Updated");
 }else{
-echo("data not updated");
+echo("Account Not Updated");
 }
 }
 }catch(Exception $ex){
@@ -133,7 +134,7 @@ echo("error in update".$ex->getMessage());
         <div class="containers">
             <div class="row">
                 <div class="col-md-auto">
-                    <form method ="post" action="admin membership.php">
+                    <form method ="post" action="admin management.php">
                         <div class="form-group">
                             <input type="number" class="form-control" name="MemberID" placeholder="Member ID" value="<?php echo($MemberID);?>"><br><br>    
                             <input type="text" class="form-control" name="Name" placeholder="Name" value="<?php echo($Name);?>"><br><br>
@@ -159,7 +160,7 @@ echo("error in update".$ex->getMessage());
                         $search_result2=mysqli_query($conn, $search_query2);
                     ?>
                     <table id="t01" class="table">
-                        <caption>Staff Accounts</caption>
+                        <caption>Member Accounts</caption>
                         <thead>
                             <tr>
                                 <th>Member ID</th>
@@ -169,6 +170,7 @@ echo("error in update".$ex->getMessage());
                                 <th>Postcode</th>
                                 <th>Phone</th>
                                 <th>email</th>
+                                <th>Access</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -183,6 +185,7 @@ echo("error in update".$ex->getMessage());
                                         <td>{$row['Postcode']}</td>
                                         <td>{$row['Phone']}</td> 
                                         <td>{$row['email']}</td>
+                                        <td>{$row['Access']}</td>
                                     </tr>";
                                 }
                             ?>

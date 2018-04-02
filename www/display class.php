@@ -41,10 +41,10 @@ error_reporting( E_ALL ^ E_DEPRECATED );
     if($insert_result)
     {
         if(mysqli_affected_rows($conn)>0){
-        echo("data inserted successfully");
+        echo("Class Sign-Up Successful");
 
         }else{
-        echo("data are not inserted");
+        echo("Class Sign-Up Unsuccessful");
         }
     }
     }catch(Exception $ex){

@@ -60,7 +60,7 @@ $Trainer = $rows['Trainer'];
 
 }
 }else{
-echo("no data are available");
+echo("No Staff Account Available");
 }
 } else{
 echo("result error");
@@ -76,10 +76,10 @@ $insert_result=mysqli_query($conn, $insert_query);
 if($insert_result)
 {
 if(mysqli_affected_rows($conn)>0){
-echo("data inserted successfully");
+echo("Staff Account Created Successfully");
 
 }else{
-echo("data are not inserted");
+echo("Staff Account Not Created");
 }
 }
 }catch(Exception $ex){
@@ -95,9 +95,9 @@ $delete_result = mysqli_query($conn, $delete_query);
 if($delete_result){
 if(mysqli_affected_rows($conn)>0)
 {
-echo("data deleted");
+echo("Staff Account Deleted");
 }else{
-echo("data not deleted");
+echo("Staff Account Not Deleted");
 }
 }
 }catch(Exception $ex){
@@ -112,9 +112,9 @@ try{
 $update_result=mysqli_query($conn, $update_query);
 if($update_result){
 if(mysqli_affected_rows($conn)>0){
-echo("data updated");
+echo("Staff Account Updated");
 }else{
-echo("data not updated");
+echo("Staff Account Not Updated");
 }
 }
 }catch(Exception $ex){
