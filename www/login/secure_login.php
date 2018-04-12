@@ -36,15 +36,11 @@ if ($count == 1) {
     $auth_l_x               = $_SESSION['auth_level'];
     if ($auth_l_x == 5) {
         header("location: ../index1.php");
-    } else if ($auth_l_x == 4) {
-        header("location: ../dashboard/cashier/");
-    } else if ($auth_l_x == 3) {
-        header("location: ../dashboard/member/");        
-    } else {
+    }else {
         header("location: ../login/");
     }
 } else {
     include 'index.php';
-    echo "<html><head><script>alert('Username OR Password is Invalid');</script></head></html>";
+    echo "<html><head><script>alert('Username or Password Incorrect');</script></head></html>";
 }
 ?>

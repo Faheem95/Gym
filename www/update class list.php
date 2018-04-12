@@ -2,7 +2,7 @@
 <?php
 error_reporting( E_ALL ^ E_DEPRECATED );
 $title = "Update Class Lists";
-$content = "Classes run everyday at 10AM, 3PM, 8PM and 10PM. Here you can update the classs list";
+$content = "";
 $servername = "localhost";
 $username="root";
 $password="";

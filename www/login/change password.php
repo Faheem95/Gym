@@ -11,15 +11,14 @@ if (strpos($a, '/e-has/') !== false) {
 <?php
 include 'index.php';
 include '../include/db connection.php';
-$key          = rtrim($_POST['login_key']);
 $pass         = rtrim($_POST['pwfield']);
 $user_id_auth = rtrim($_POST['login_id']);
-if (isset($user_id_auth) && isset($pass) && isset($key)) {
-    $sql    = "SELECT * FROM login_user_level WHERE login_key='$key'";
+if (isset($user_id_auth) && isset($pass)) {
+    $sql    = "SELECT * FROM auth_user WHERE login_id='$user_id_auth'";
     $result = mysqli_query($con, $sql);
     $count  = mysqli_num_rows($result);
     if ($count == 1) {
-        mysqli_query($con, "UPDATE login_user_level SET pass_key='$pass' WHERE login_id='$user_id_auth'");
+        mysqli_query($con, "UPDATE auth_user SET pass_key='$pass' WHERE login_id='$user_id_auth'");
         echo "<html><head><script>alert('Password Updated ,Login Again ');</script></head></html>";
         echo "<meta http-equiv='refresh' content='0; url=index.php'>";
     } else {
@@ -31,6 +30,3 @@ if (isset($user_id_auth) && isset($pass) && isset($key)) {
     echo "<meta http-equiv='refresh' content='0; url=index.php'>";
 }
 ?>
-<center>
-
-</center>

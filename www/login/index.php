@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Neon Admin Panel" />
-    <meta name="author" content="Laborator.co" />
+    <meta name="description" content="Admin Panel" />
+    <meta name="author" content="Mohammed Faheem Hasan" />
     
-    <title>Optimum GymLogin</title>
+    <title>Optimum Gym Login</title>
 
-    <!--<link rel="stylesheet" href="../neon/js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">-->
-    <!--<link rel="stylesheet" href="../neon/css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
-    <link rel="stylesheet" href="../neon/css/font-icons/entypo/css/animation.css"  id="style-resource-3">
-    <link rel="stylesheet" href="../neon/css/neon.css"  id="style-resource-5">
-    <link rel="stylesheet" href="../neon/css/custom.css"  id="style-resource-6">-->
-    <link rel="stylesheet" href="../js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
+
+<link rel="stylesheet" href="../js/jquery-ui/css/no-theme/jquery-ui-1.10.3.custom.min.css"  id="style-resource-1">
     <link rel="stylesheet" href="../css/font-icons/entypo/css/entypo.css"  id="style-resource-2">
     <link rel="stylesheet" href="../css/font-icons/entypo/css/animation.css"  id="style-resource-3">
     <link rel="stylesheet" href="../css/neon.css"  id="style-resource-5">

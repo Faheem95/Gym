@@ -5,12 +5,12 @@
 		<div class="login-content">
 			
 			<a href="#" class="logo">
-				<img src="../img/logo.png" alt="" />
+				<img src="../login/icon.png" alt="OG Logo" width ="150" height="75"/>
 			</a>
 			
-			<p class="description">log in to access the admin functions</p>
+			<p class="description">log in to access functions</p>
 			
-			<!-- progress bar indicator -->
+
 			<div class="login-progressbar-indicator">
 				<h3>43%</h3>
 				<span>logging in...</span>
@@ -33,7 +33,7 @@
 						<div class="input-group-addon">
 							<i class="entypo-user"></i>
 						</div>
-							<input type="text" placeholder="User ID" class="form-control" name="user_id_auth" id="textfield" data-rule-minlength="6" data-rule-required="true">
+							<input type="text" placeholder="Username" class="form-control" name="user_id_auth" id="textfield" data-rule-minlength="6" data-rule-required="true">
 					</div>
 				</div>				
 								
@@ -42,7 +42,7 @@
 						<div class="input-group-addon">
 							<i class="entypo-key"></i>
 						</div>
-						<input type="password" name="pass_key" id="pwfield" class="form-control" data-rule-required="true" data-rule-minlength="6" placeholder="Passcode">
+						<input type="password" name="pass_key" id="pwfield" class="form-control" data-rule-required="true" data-rule-minlength="6" placeholder="Password">
 					</div>				
 				</div>
 				
@@ -55,7 +55,7 @@
 			</form>
 		
 				<div class="login-bottom-links">
-					<a href="ajax_f.php" class="link">Forgot your password?</a>
+					<a href="forgot password.php" class="link">Forgot your password?</a>
 				</div>			
 		</div>
 		
